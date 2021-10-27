@@ -1,0 +1,30 @@
+// life cycle method
+
+1> Mounting => it containt created ealted work
+  1. constructor()
+  2. static getDerivedStateFromProps()
+  3. rendder()
+  4.componentDidMount()
+
+  // componentsWillMount() is not exist now it is removed 
+
+
+
+2> updating => it containt updating realted work
+  static getDerivedStateFromProps()
+  shouldComponentsUpdate()
+  render()
+  getSnapshotBeforeUpdat()
+  componentDidUpdate()
+
+ // avoid them unsafe
+    // componentsWillUpdate()
+    // componentsWillrECEIVEpROPS()
+
+  
+3> unmounting => it remove components 
+   componentsWillUnMount
+
+4> Error Handling => it handle errors 
+  static getDerivedStateFromError()
+  componentDidCatch()
